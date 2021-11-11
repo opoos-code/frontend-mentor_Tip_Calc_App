@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" async></script> 
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <div class='container'>
+    <div class='container-select'>
+      <div class="Bill-label">
+        <h3 class='heading'>Bill</h3>
+        <input class="calc-input input-dollar-icon" id='bill' type="number">
+      </div>
+      <div>
+        <h3 class='heading'>Select Tip %<h3>
+          <div class="btn-group">
+            <button class='btn' type="button">5%</button>
+            <button class='btn' type="button">10%</button>
+            <button class='btn' type="button">15%</button>
+            <button class='btn' type="button">25%</button>
+            <button class='btn' type="button">50%</button>
+            <button class='btn' id="custom" type="button">Custom</button>
+          </div>
+      </div>
+      <div>
+        <h3 class='heading'>Number of People<span class='heading Error-Message hide'>Cant be zero!</span></h3>
+        <input class="calc-input input-person-icon" id='numofpeople' type="number">
+      </div>
+    </div>
+    <div class='container-show'>
+      <div class='container-label'>
+        <div>
+          <h3>Tip Amount</h3>
+          <p class='p-show'>/ person</p>
+        </div>
+      <h1 class='price' id='tip'>$4.97</h1>
+      </div>
+      <div class='container-label'>
+        <div>
+          <h3>Total</h3>
+          <p class='p-show'>/ person</p>
+        </div>
+        <h1 class='price' id='total'>$32.97</h1>
+      </div>
+      <button class='btn-reset' type="Reset">Reset</button>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Oliver</a>.
+  </div>
+</body>
+</html>
